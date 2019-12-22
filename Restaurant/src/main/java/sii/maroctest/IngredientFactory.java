@@ -7,7 +7,7 @@ public class IngredientFactory {
     private static final int INGREDIENT_NAME_INDEX = 1;
 
     public static Ingredient getIngredient(String ingredientDescription) {
-        String ingredientName = ingredientDescription.split("\\d+")[INGREDIENT_NAME_INDEX];
+        String ingredientName = ingredientDescription.split(" ")[INGREDIENT_NAME_INDEX];
         if ("balls Mozzarella".equals(ingredientName)) {
             return new Mozzarella();
         } else if ("tomatoes".equals(ingredientName)) {
