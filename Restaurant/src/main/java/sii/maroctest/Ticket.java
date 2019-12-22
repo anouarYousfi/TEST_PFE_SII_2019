@@ -21,8 +21,8 @@ public class Ticket {
     }
 
     public Ticket and(String additionalOrderDescription) {
-        secondOrder = additionalOrderDescription.split("\\d+")[1];
-        numberOfadditionalOrders = Integer.parseInt(additionalOrderDescription.split(" ")[0]);
+        secondOrder = additionalOrderDescription.split(" ")[1];
+        numberOfadditionalOrders = Integer.parseInt(additionalOrderDescription.(" ")[0]);
         return this;
     }
 
